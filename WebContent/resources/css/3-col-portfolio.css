@@ -16,6 +16,10 @@ footer {
     margin: 50px 0;
 }
 
+.ajuste{
+	float:right;
+}
+
 .myButton {
 	background-color:#44c767;
 	-moz-border-radius:28px;
@@ -37,23 +41,4 @@ footer {
 .myButton:active {
 	position:relative;
 	top:1px;
-}
-
-/* Home Page Carousel */
-
-header.carousel {
-    height: 50%;
-}
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
-}
-
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
 }
