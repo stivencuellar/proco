@@ -16,6 +16,10 @@ footer {
     margin: 50px 0;
 }
 
+.ajuste{
+	float:right;
+}
+
 .myButton {
 	background-color:#44c767;
 	-moz-border-radius:28px;
