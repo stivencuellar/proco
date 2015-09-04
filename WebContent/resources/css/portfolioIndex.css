@@ -19,15 +19,28 @@ body {
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 5em;
     font-weight: 700;
+}
+
+.txtLogin{
+	color: white;
+}
+
+.textBox{
+	width: 85%;
+}
+
+.iconRedSocial{
+	width: 70px;
+	height: 70px;
 }
 
 /* Custom Button Styles */

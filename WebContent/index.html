@@ -29,6 +29,33 @@
 
 <body> 
 
+<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">Inicia Sesión<i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">X<i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <p class="txtLogin">Inicia Sesión</p>
+            </li>
+            <li>
+                <p class="txtLogin">Usuario</p>
+            </li>
+            <li>
+            	<input class="textBox" type="text" name="us">
+            </li>
+            <li>
+                <p class="txtLogin">Contraseña</p>
+            </li>
+            <li>
+            	<input class="textBox" type="password" name="pw">
+            </li>
+            <br>
+            <li>
+            	<a href="misCosas.html" class="btn btn-dark btn-lg">Ingresar</a>
+            </li>
+        </ul>
+    </nav>
+
 <!-- Header -->
 <!--http://www.larepublica.co/sites/default/files/larepublica/imagenes/noticias/1/medellin0302-1000.jpg-->
     <header id="top" class="header">
@@ -37,7 +64,7 @@
         		<h1>PROCO</h1>
 	            <h3>Proyectos Colaborativos</h3>
 	            <br>
-	            <a href="misCosas.html" class="btn btn-dark btn-lg">Iniciar Sesión</a>
+	            <!--<a href="misCosas.html" class="btn btn-dark btn-lg">Iniciar Sesión</a>-->
         	</div>
         </div>
     </header>
@@ -68,8 +95,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <img class="iconRedSocial" src="resources/img/usuario3.png">
                             </span>
                                 <h4>
                                     <strong>Dedicación</strong>
@@ -81,8 +107,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <img class="iconRedSocial" src="resources/img/usuario2.png">
                             </span>
                                 <h4>
                                     <strong>Compromiso</strong>
@@ -94,8 +119,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <img class="iconRedSocial" src="resources/img/usuario1.png">
                             </span>
                                 <h4>
                                     <strong>Orden</strong>
@@ -107,8 +131,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                               <img class="iconRedSocial" src="resources/img/usuario4.png">
                             </span>
                                 <h4>
                                     <strong>Liderazgo</strong>
@@ -143,13 +166,13 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <img class="iconRedSocial" src="resources/img/facebook_circle_color.png">
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <img class="iconRedSocial" src="resources/img/linkedin_circle.png">
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <img class="iconRedSocial" src="resources/img/twitter_circle_color.png">
                         </li>
                     </ul>
                     <hr class="small">
@@ -159,6 +182,43 @@
         </div>
     </footer>
 
+<!-- jQuery -->
+    <script src="resources/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="resources/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
