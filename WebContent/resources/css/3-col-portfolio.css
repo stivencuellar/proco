@@ -48,3 +48,8 @@ footer {
 	position:relative;
 	top:1px;
 }
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+  background-color: #F0AD4E;
+  color:#eeeeee;
+}
