@@ -1,4 +1,4 @@
-package cp.com.hobbies.controller;
+package co.com.hobbies.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
