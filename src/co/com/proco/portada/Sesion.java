@@ -2,6 +2,7 @@ package co.com.proco.portada;
 
 /**
  * 
+ * @author mloaizaPC
  * @author SCuellar
  *
  */
@@ -33,6 +34,4 @@ public class Sesion {
 		this.imagen = imagen;
 	}
 	
-	
-
 }
