@@ -1,3 +1,7 @@
+<%@page contentType="text/html; charset=ISO-8859-1"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,14 +45,14 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Proco</a>
+				<a class="navbar-brand" href="index.jsp">Proco</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="actividades.html">Actividades</a></li>
-					<li><a href="misCosas.html">Mis Cosas</a></li>
+					<li><a href="actividades.jsp">Actividades</a></li>
+					<li><a href="misCosas.jsp">Mis Cosas</a></li>
 				</ul>
 				<ul class="nav navbar-nav ajuste">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -65,7 +69,7 @@
 		<!-- /.container -->
 	</nav>
 
-	<form class="form-horizontal" action="nuevaAreaConocimiento.html">
+	<form class="form-horizontal" action="nuevaAreaConocimiento.jsp">
 		<fieldset>
 			<!-- Form Name -->
 			<legend>Areas de Conocimiento</legend>
