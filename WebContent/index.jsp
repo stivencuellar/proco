@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +11,19 @@
     <meta name="author" content="">
 
     <title>PROCO</title>
+    
+	<!-- jQuery -->
+    <script src="resources/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="resources/js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="resources/css/bootstrapIndex.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrapIndex.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="resources/css/portfolioIndex.css" rel="stylesheet">
-
-
+    <!-- Custom CSS-->
+    <link href="resources/css/portfolioIndex.css" rel="stylesheet" type="text/css">
+ 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,12 +36,12 @@
 <body> 
 
 <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">Inicia Sesi贸n<i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">Inicia Sesi髇<i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">X<i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <p class="txtLogin">Inicia Sesi贸n</p>
+                <p class="txtLogin">Inicia Sesi髇</p>
             </li>
             <li>
                 <p class="txtLogin">Usuario</p>
@@ -44,12 +50,11 @@
             	<input class="textBox" type="text" name="us">
             </li>
             <li>
-                <p class="txtLogin">Contrase帽a</p>
+                <p class="txtLogin">Contrase馻</p>
             </li>
             <li>
             	<input class="textBox" type="password" name="pw">
             </li>
-            <br>
             <li>
             	<a href="misCosas.html" class="btn btn-dark btn-lg">Ingresar</a>
             </li>
@@ -75,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>驴Tienes un proyecto... y necesitas ayuda?</h2>
+                    <h2>縏ienes un proyecto... y necesitas ayuda?</h2>
                     <p class="lead">Ingresa a PROCO, registra las actividades en las que necesitas ayuda y dejanos el resto a nosotros. <a target="_blank" href="#">Registrarme</a>.</p>
                 </div>
             </div>
@@ -96,13 +101,13 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <img class="iconRedSocial" src="resources/img/usuario3.png">
+                                <img class="iconRedSocial" src="resources/img/usuario3.png"> 
                             </span>
                                 <h4>
-                                    <strong>Dedicaci贸n</strong>
+                                    <strong>Dedicaci髇</strong>
                                 </h4>
                                 <p>Manuela Loaiza</p>
-                                <p>Destaca en la aplicaci贸n por ser muy dedicada en las entregas</p>
+                                <p>Destaca en la aplicaci髇 por ser muy dedicada en las entregas</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -167,7 +172,7 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <img href="https://www.facebook.com/" class="iconRedSocial" src="resources/img/facebook_circle_color.png">
+                            <img class="iconRedSocial" src="resources/img/facebook_circle_color.png">
                         </li>
                         <li>
                             <img class="iconRedSocial" src="resources/img/linkedin_circle.png">
@@ -183,11 +188,7 @@
         </div>
     </footer>
 
-<!-- jQuery -->
-    <script src="resources/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="resources/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
     <script>

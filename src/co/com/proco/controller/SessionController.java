@@ -10,7 +10,7 @@ import co.com.proco.portada.Sesion;
 @Controller
 public class SessionController {
 	
-	@RequestMapping(value = "/session", method = RequestMethod.GET)
+	@RequestMapping(value = "/Session", method = RequestMethod.GET)
 	public ModelAndView inicioSesiones(){
 		ModelAndView modelAndView = new ModelAndView("index", "sesionobj", new Sesion());
 		return modelAndView;
