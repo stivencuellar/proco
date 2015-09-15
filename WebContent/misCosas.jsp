@@ -1,3 +1,8 @@
+<%@page contentType="text/html; charset=ISO-8859-1"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,10 +49,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="actividades.html">Actividades</a>
+                        <a href="actividades.jsp">Actividades</a>
                     </li>
                     <li>
-                        <a href="misCosas.html">Mis Cosas</a>
+                        <a href="misCosas.jsp">Mis Cosas</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ajuste">
@@ -61,10 +66,10 @@
                                 <a href="#">Proyectos</a>
                             </li>
                             <li>
-                                <a href="configuracion.html">Configuración</a>
+                                <a href="configuracion.jsp">Configuración</a>
                             </li>
                              <li>
-                                <a href="index.html">Cerrar Sesión</a>
+                                <a href="index.jsp">Cerrar Sesión</a>
                             </li>
                         </ul>
                     </li>

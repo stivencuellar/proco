@@ -1,3 +1,9 @@
+<%@page contentType="text/html; charset=ISO-8859-1"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +34,7 @@
 
 <body>
 
-	<form class="form-horizontal" action="nuevoIndividuo.html">
+	<form class="form-horizontal" action="nuevoIndividuo.jsp">
 		<fieldset>
 
 			<!-- Form Name -->

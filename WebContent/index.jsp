@@ -1,14 +1,20 @@
+
+<%@page contentType="text/html; charset=ISO-8859-1"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
+	
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>PROCO</title>
 
     <!-- Bootstrap Core CSS -->
@@ -51,7 +57,7 @@
             </li>
             <br>
             <li>
-            	<a href="misCosas.html" class="btn btn-dark btn-lg">Ingresar</a>
+            	<a href="misCosas.jsp" class="btn btn-dark btn-lg">Ingresar</a>
             </li>
             
         </ul>

@@ -1,3 +1,8 @@
+<%@page contentType="text/html; charset=ISO-8859-1"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +32,8 @@
 </head>
 
 <body>
+
+
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -38,14 +45,14 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Proco</a>
+				<a class="navbar-brand" href="index.jsp">Proco</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="actividades.html">Actividades</a></li>
-					<li><a href="misCosas.html">Mis Cosas</a></li>
+					<li><a href="actividades.jsp">Actividades</a></li>
+					<li><a href="misCosas.jsp">Mis Cosas</a></li>
 				</ul>
 				<ul class="nav navbar-nav ajuste">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -62,81 +69,46 @@
 		<!-- /.container -->
 	</nav>
 
-	<!-- Page Content -->
-	<div class="container">
+	<form class="form-horizontal">
+		<fieldset>
 
-		<!-- Page Header -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Configuración</h1>
+			<!-- Form Name -->
+			<legend>Áreas de Conocimiento</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label"
+					for="txtNombreAreaConocimiento">Área de Conocimiento</label>
+				<div class="col-md-4">
+					<input id="txtNombreAreaConocimiento"
+						name="txtNombreAreaConocimiento" type="text" placeholder=""
+						class="form-control input-md">
+
+				</div>
 			</div>
-		</div>
-		<!-- /.row -->
 
-		<!-- Projects Row -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">
-					<small>Configuración del Sistema</small>
-				</h1>
+			<!-- Textarea -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="txtDescripcionAreaCon">Descripción</label>
+				<div class="col-md-4">
+					<textarea class="form-control" id="txtDescripcionAreaCon"
+						name="txtDescripcionAreaCon"></textarea>
+				</div>
 			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-md-4 portfolio-item">
-				<a href="areasConocimientoRender.html"> <img
-					class="img-responsive"
-					src="https://pixabay.com/get/9c42c6f06183e450a2c3/1441686583/psychology-544405_1280.png"
-					alt="">
-				</a>
-				<h3>
-					<a href="#">Areas de Conocimiento</a>
-				</h3>
-
+			<!-- Button (Double) -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="btnAceptar"></label>
+				<div class="col-md-8">
+					<button id="btnAceptar" name="btnAceptar" class="btn btn-success">Aceptar</button>
+					<button id="btnCancelar" name="btnCancelar" class="btn btn-danger"
+						type="button" onclick="history.back()">Cancelar</button>
+				</div>
 			</div>
-			<div class="col-md-4 portfolio-item">
-				<a href="#"> <img class="img-responsive"
-					src="https://pixabay.com/get/51764366a40db1e7d652/1441687215/team-386673_1280.jpg"
-					alt="">
-				</a>
-				<h3>
-					<a href="#">Individuos</a>
-				</h3>
 
-			</div>
-			<div class="col-md-4 portfolio-item">
-				<a href="#"> <img class="img-responsive"
-					src="https://pixabay.com/get/7de6f66163e8c0694add/1441687550/sketch-457719_1280.jpg"
-					alt="">
-				</a>
-				<h3>
-					<a href="#">Proyectos</a>
-				</h3>
+		</fieldset>
+	</form>
 
-			</div>
-		</div>
-		<!-- /.row -->
-
-		<!-- Pagination -->
-		<div class="row text-center">
-			<div class="col-lg-12">
-				<ul class="pagination">
-					<li><a href="#">&laquo;</a></li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">&raquo;</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- /.row -->
-
-	</div>
-	<!-- jQuery -->
-	<script src="resources/js/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="resources/js/bootstrap.min.js"></script>
 
 </body>
 
