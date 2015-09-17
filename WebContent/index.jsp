@@ -56,7 +56,7 @@
             	<input class="textBox" type="password" name="pw">
             </li>
             <li>
-            	<a href="misCosas.html" class="btn btn-dark btn-lg">Ingresar</a>
+            	<a href="misCosas.jsp" class="btn btn-dark btn-lg">Ingresar</a>
             </li>
             
         </ul>
@@ -70,7 +70,7 @@
         		<h1>PROCO</h1>
 	            <h3>Proyectos Colaborativos</h3>
 	            <br>
-	            <!--<a href="misCosas.html" class="btn btn-dark btn-lg">Iniciar Sesión</a>-->
+	            <!--<a href="misCosas.jsp" class="btn btn-dark btn-lg">Iniciar Sesión</a>-->
         	</div>
         </div>
     </header>
