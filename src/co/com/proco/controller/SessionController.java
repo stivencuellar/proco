@@ -1,3 +1,4 @@
+
 package co.com.proco.controller;
 
 import org.springframework.stereotype.Controller;
@@ -13,25 +14,15 @@ public class SessionController {
 	
 	@RequestMapping(value = "/Session", method = RequestMethod.GET)
 	public ModelAndView inicioSesiones(){
-		ModelAndView modelAndView = new ModelAndView("index", "sesionobj", new Sesion());
+		Sesion sesion = new Sesion();
+		sesion.setImagen("/rutaImagen");
+		sesion.setTitulo("Titulo 1");
+		ModelAndView modelAndView = new ModelAndView("index", "sesionobj",sesion);
 		
 		modelAndView.setViewName("misCosas");
 		modelAndView.addObject("sesionobj");		
 		
-		Sesion ob1 = new Sesion();
-		ob1.setImagen("/rutaImagen");
-		ob1.setTitulo("Titulo 1");
-		
-		Sesion ob2 = new Sesion();
-		ob2.setImagen("");
-		ob2.setTitulo("Titulo 2");		
-		
-		Sesion ob3 = new Sesion();
-		ob3.setImagen("");
-		ob3.setTitulo("Titulo 3");
-		
-		
-		
+			
 		return modelAndView;
 	}
 	
