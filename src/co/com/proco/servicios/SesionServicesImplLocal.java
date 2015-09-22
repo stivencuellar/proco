@@ -47,7 +47,7 @@ public class SesionServicesImplLocal implements SesionServicesInterface {
 		SesionDTO objeto4 = new SesionDTO();
 		objeto4.setImagen("resources/img/usuario4.png");
 		objeto4.setTitulo("Stiven Cuellar Mejia");
-		objeto4.setDescripcion("Destaca en la aplicación por ser muy buen lider en los proyectos");
+		objeto4.setDescripcion("Destaca en la aplicación por ser muy buen lider en los proyectos"); 
 		listaSesion.add(objeto4);
 				
 		return listaSesion;
