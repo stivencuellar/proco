@@ -1,4 +1,4 @@
-package co.com.proco.maestros;
+package co.com.proco.modelo;
 
 public class AreaConocimiento {
 

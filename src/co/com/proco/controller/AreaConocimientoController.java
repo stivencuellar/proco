@@ -3,10 +3,10 @@ package co.com.proco.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
-import co.com.proco.maestros.AreaConocimiento;
+import co.com.proco.modelo.AreaConocimiento;
 
 /**
- * Controlador de áreas de conocimiento, clase que nos permite el manejo de eventos de la vista de áreas de conocimiento
+ * Controlador de ï¿½reas de conocimiento, clase que nos permite el manejo de eventos de la vista de ï¿½reas de conocimiento
  * @author SCuellar
  *
  */
@@ -14,8 +14,8 @@ import co.com.proco.maestros.AreaConocimiento;
 public class AreaConocimientoController {
 	
 	/**
-	 * Método que permite la navegación entre páginas, es importante resaltar que va a permitir la navegación entre
-	 * las áreas de conocimiento.
+	 * Mï¿½todo que permite la navegaciï¿½n entre pï¿½ginas, es importante resaltar que va a permitir la navegaciï¿½n entre
+	 * las ï¿½reas de conocimiento.
 	 * @return
 	 */
 	public ModelAndView flujoAreaConocimiento(){
