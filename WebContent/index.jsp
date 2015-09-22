@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>    
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
+    
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +60,7 @@
             	<input class="textBox" type="password" name="pw">
             </li>
             <li>
-            	<a href="misCosas.html" class="btn btn-dark btn-lg">Ingresar</a>
+            	<a href="misCosas.jsp" class="btn btn-dark btn-lg">Ingresar</a>
             </li>
             
         </ul>
@@ -70,7 +74,7 @@
         		<h1>PROCO</h1>
 	            <h3>Proyectos Colaborativos</h3>
 	            <br>
-	            <!--<a href="misCosas.html" class="btn btn-dark btn-lg">Iniciar Sesi贸n</a>-->
+	            <!--<a href="misCosas.jsp" class="btn btn-dark btn-lg">Iniciar Sesi贸n</a>-->
         	</div>
         </div>
     </header>
@@ -91,72 +95,99 @@
 
 <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Ranking</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img class="iconRedSocial" src="resources/img/usuario3.png"> 
-                            </span>
-                                <h4>
-                                    <strong>Dedicaci髇</strong>
-                                </h4>
-                                <p>Manuela Loaiza</p>
-                                <p>Destaca en la aplicaci髇 por ser muy dedicada en las entregas</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img class="iconRedSocial" src="resources/img/usuario2.png">
-                            </span>
-                                <h4>
-                                    <strong>Compromiso</strong>
-                                </h4>
-                                <p>Katerine Alzate</p>
-                                <p>Destaca en la aplicaci贸n por ser muy comprometida con las entregas</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img class="iconRedSocial" src="resources/img/usuario1.png">
-                            </span>
-                                <h4>
-                                    <strong>Orden</strong>
-                                </h4>
-                                <p>Marcos Aremas</p>
-                                <p>Destaca en la aplicaci贸n por ser muy ordenado en las entregas</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                               <img class="iconRedSocial" src="resources/img/usuario4.png">
-                            </span>
-                                <h4>
-                                    <strong>Liderazgo</strong>
-                                </h4>
-                                <p>Stiven Cuellar</p>
-                                <p>Destaca en la aplicaci贸n por ser muy buen lider en los proyectos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-<!-- Footer -->
+	
+	
+		<section id="services" class="services bg-primary">
+			<div class="container">
+				
+					<div class="row text-center">
+	
+	
+						<div class="col-lg-10 col-lg-offset-1">
+							<h2>Ranking</h2>
+							<hr class="small">
+	
+							<div class="row">
+								<c:forEach items="${sesionobj}" var="SesionDTO">
+								<div class="col-md-3 col-sm-6">								
+										<div class="service-item">
+											<span class="fa-stack fa-4x"> <img class="iconRedSocial"
+												src=<c:out value="${ SesionDTO.imagen}"/>>
+											</span>
+											<h4>
+												<strong>Dedicaci髇</strong>
+											</h4>
+											<p>
+												<c:out value="${ SesionDTO.titulo}" />
+											</p>
+											<p>
+												<c:out value="${ SesionDTO.descripcion}" />
+											</p>
+										</div>
+								</div>
+								</c:forEach>
+								
+<!-- 								<div class="col-md-3 col-sm-6"> -->
+<!-- 									<div class="service-item"> -->
+<!-- 										<span class="fa-stack fa-4x"> <img class="iconRedSocial" -->
+<%-- 											src=<c:out value="${ SesionDTO.imagen}"/>> --%>
+<!-- 										</span> -->
+<!-- 										<h4> -->
+<!-- 											<strong>Compromiso</strong> -->
+<!-- 										</h4> -->
+<!-- 										<p> -->
+<%-- 											<c:out value="${ SesionDTO.titulo}" /> --%>
+<!-- 										</p> -->
+<!-- 										<p>Destaca en la aplicaci贸n por ser muy comprometida con -->
+<!-- 											las entregas</p> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 								<div class="col-md-3 col-sm-6"> -->
+<!-- 									<div class="service-item"> -->
+<!-- 										<span class="fa-stack fa-4x"> <img class="iconRedSocial" -->
+<%-- 											src=<c:out value="${ SesionDTO.imagen}"/>> --%>
+<!-- 										</span> -->
+<!-- 										<h4> -->
+<!-- 											<strong>Orden</strong> -->
+<!-- 										</h4> -->
+<!-- 										<p> -->
+<%-- 											<c:out value="${ SesionDTO.titulo}" /> --%>
+<!-- 										</p> -->
+<!-- 										<p>Destaca en la aplicaci贸n por ser muy ordenado en las -->
+<!-- 											entregas</p> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 								<div class="col-md-3 col-sm-6"> -->
+<!-- 									<div class="service-item"> -->
+<!-- 										<span class="fa-stack fa-4x"> <img class="iconRedSocial" -->
+<%-- 											src=<c:out value="${ SesionDTO.imagen}"/>> --%>
+<!-- 										</span> -->
+<!-- 										<h4> -->
+<!-- 											<strong>Liderazgo</strong> -->
+<!-- 										</h4> -->
+<!-- 										<p> -->
+<%-- 											<c:out value="${ SesionDTO.titulo}" /> --%>
+<!-- 										</p> -->
+<!-- 										<p>Destaca en la aplicaci贸n por ser muy buen lider en los -->
+<!-- 											proyectos</p> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+	
+							</div>
+	
+							<!-- /.row (nested) -->
+						</div>
+	
+	
+						<!-- /.col-lg-10 -->
+					</div>
+				
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+	
+	<!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
